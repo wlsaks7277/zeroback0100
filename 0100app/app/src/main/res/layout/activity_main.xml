@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/buttonOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonOnOffClicked"
+            android:text="On / Off"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <Button
+            android:id="@+id/buttonNFC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonNFCClicked"
+            android:text="NFC"
+            tools:layout_editor_absoluteX="231dp"
+            tools:layout_editor_absoluteY="78dp" />
+
+        <Button
+            android:id="@+id/buttonGps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonGpsClicked"
+            android:text="위치 추적"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="201dp" />
+
+        <Button
+            android:id="@+id/buttonManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setButtonManualClicked"
+            android:text="수동 조작"
+            tools:layout_editor_absoluteX="231dp"
+            tools:layout_editor_absoluteY="201dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
